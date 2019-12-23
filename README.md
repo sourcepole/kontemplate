@@ -3,6 +3,9 @@ Kontemplate - A simple Kubernetes templater
 
 [![Build Status](https://travis-ci.org/tazjin/kontemplate.svg?branch=master)](https://travis-ci.org/tazjin/kontemplate)
 
+(this is a fork/mirror of https://git.tazj.in/tree/ops/kontemplate, please read
+ below under ["This Fork"](#this-fork))
+
 [Kontemplate][] is a simple CLI tool that can take sets of Kubernetes resource
 files with placeholders and insert values per environment.
 
@@ -28,6 +31,7 @@ Check out a Kontemplate setup example and the feature list below!
         - [Building from source](#building-from-source)
     - [Usage](#usage)
     - [Contributing](#contributing)
+    - [This Fork](#this-fork)
 
 <!-- markdown-toc end -->
 
@@ -188,3 +192,37 @@ Please follow the [code of conduct](CODE_OF_CONDUCT.md).
 [releases page]: https://github.com/tazjin/kontemplate/releases
 [AUR package]: https://aur.archlinux.org/packages/kontemplate-git/
 [Repeatr]: http://repeatr.io/
+
+## This Fork
+
+The original author has [moved](https://github.com/tazjin/kontemplate/blob/master/README.md)
+kontemplate's development into a monorepo. A few aspects of that
+seem suboptimal:
+
+* Kontemplate in a monorepo along with unrelated things
+  incurs the cost of those additional things.
+
+* Having kontemplate on Github brings along collaboration amenities.
+  Currently tazjin's "depot" doesn't seem include any collaborative
+  features.
+
+As long as the situation is unclear [I](https://github.com/tpo/) want
+to keep a mirror of kontemplate here. I intend to have the following
+workflow:
+
+* I'll copy/paste/apply [each kontemplate patch](https://git.tazj.in/log/ops/kontemplate)
+  from the monorepo.
+
+  I do this since git doesn't seem to offer any tooling for
+  merging/cherry-picking changes from a different repo that has
+  a different layout (kontemplate is in a subdirectory inside of
+  the monorepo)(pointers to existing tooling for that purpose
+  are wellcome).
+
+* if you see a change in the monorepo, then please open an
+  [issue](https://github.com/sourcepole/kontemplate/issues) here,
+  and I shall try to apply it here.
+
+This is intended to be a friendly fork/mirror. In case the fog
+clears up and working with the monorepo infrastructure seems
+practical I might drop this repository.
