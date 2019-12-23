@@ -201,7 +201,7 @@ seem suboptimal:
   incurs the cost of those additional things.
 
 * Having Kontemplate on Github brings along collaboration amenities.
-  Currently tazjin's "depot" doesn't seem include any collaborative
+  Currently tazjin's "depot" doesn't seem to include any collaborative
   features.
 
 As long as the situation is unclear [I](https://github.com/tpo/) want
