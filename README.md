@@ -209,7 +209,8 @@ to keep a mirror of Kontemplate here. I intend to have the following
 workflow:
 
 * I'll copy/paste/apply [each Kontemplate patch](https://git.tazj.in/log/ops/kontemplate)
-  from the monorepo.
+  from the monorepo. That is done with the
+  [merge-from-upstream.sh](./merge-from-upstream.sh) script.
 
   I do this since git doesn't seem to offer any tooling for
   merging/cherry-picking changes from a different repo that has
